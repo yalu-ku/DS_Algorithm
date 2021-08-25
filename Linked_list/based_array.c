@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#define INF 10000
+#define INF 10000 //메모리공간 무한대
 
 int arr[INF];
 int count = 0;
@@ -20,12 +20,11 @@ void addFirst(int data) {
 
 void show() {
     for (int i=0; i<count; i++){
-        printf("%d\n", arr[i]);
+        printf("%d ", arr[i]);
     }
 }
 
 int main(void) {
-    // printf("kdh\n");
     addFirst(4);
     addFirst(5);
     addFirst(1);
@@ -34,4 +33,4 @@ int main(void) {
     addBack(8);
     show();
     return 0;
-}
+} //공백넣어봤음
